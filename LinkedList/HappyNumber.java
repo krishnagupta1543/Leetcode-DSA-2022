@@ -1,11 +1,4 @@
-<a> https://leetcode.com/problems/happy-number/ </a>
-<h1> Happy Number </h1>
-<p> <i> This question is asked in google interview </i>
-<h2>  Approach </h2>
-<ul>
-    <li> This question uses simple approach but you have to find the approach while solving </li>
-    
-</ul>
+// https://leetcode.com/problems/happy-number/ 
 class Solution {
     public boolean isHappy(int n) {
         int slow = n;
