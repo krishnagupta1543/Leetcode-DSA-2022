@@ -1,5 +1,4 @@
-// https://leetcode.com/problems/happy-number/
-
+// https://leetcode.com/problems/happy-number/ 
 class Solution {
     public boolean isHappy(int n) {
         int slow = n;
