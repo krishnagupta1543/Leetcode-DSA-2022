@@ -14,7 +14,7 @@ public static void main(String[] args){
         System.out.println(Arrays.toString(arr));
 }
 
-//Reccursive method
+//Recursive method
 
  public static void main(String[] args){
         int[] arr = {4, 3, 2, 1};
