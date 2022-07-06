@@ -29,9 +29,12 @@ public class CircularQueue {
     }
 
     public void display(){
-        for (int i = f; i < e; i++) {
-            System.out.print(arr[i]+" <- ");
-        }
+       int i = f;
+       do{
+           System.out.print(arr[i]+" <- ");
+           i = (i+1)% arr.length;
+       }while(i != e);
+
     }
 
     public boolean isEmpty(){
