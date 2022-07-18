@@ -7,10 +7,10 @@
 
 class Solution {
     public int search(int[] nums, int target) {
-        int p = pivot(nums);
-        int ans = binarysearch(nums, target, 0, p);
+        int p = pivot(nums); // when p = -1
+        int ans = binarysearch(nums, target, 0, p); // it return -1 for p = -1
         if(ans == -1){
-            ans = binarysearch(nums, target, p+1, nums.length-1);
+            ans = binarysearch(nums, target, p+1, nums.length-1); // whem p = -1 p+1 = 0 and nums.length-1 --> work as a normal binary search
         }
         return ans;
     }
@@ -45,7 +45,8 @@ class Solution {
                 s = mid+1;
             }
         }
-        return s;
+        // if pivot return -1 means pivot is not present apply normal binary search 
+        return -1;
     }
 
 }
