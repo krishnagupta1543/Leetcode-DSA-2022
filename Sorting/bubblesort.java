@@ -32,6 +32,6 @@ public static void main(String[] args){
             bubblesort(arr, r, c + 1);
         }else {
             bubblesort(arr, r - 1, 0);
-        } 
+        }
 
     }
