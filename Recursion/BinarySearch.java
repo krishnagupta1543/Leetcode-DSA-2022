@@ -1,6 +1,6 @@
 package com.company;
 
-public class Try {
+public class BinarySearch {
     //RECCURENCE RELATION - T(N) = O(1) + T(N/2)
     // TIME COMPLEXITY IS O(LogN)
     public static void main(String[] args) {
@@ -24,5 +24,6 @@ public class Try {
        return -1;
     }
 }
+
 
 
