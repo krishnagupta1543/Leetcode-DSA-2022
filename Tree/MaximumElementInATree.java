@@ -1,19 +1,9 @@
 // RECURSIVE WAY
-static int max = Integer.MIN_VALUE;
-    public static int maximum(Node root){
-        if(root!=null){
-            int left = maximum(root.left);
-            int right = maximum(root.right);
-            if(left>right){
-                max = left;
-            }else{
-                max = right;
-            }
-            if(root.data>max){
-                max = root.data;
-            }
-        }
-        return max;
+static int maximum(Node root){
+        if(root == null) return -1;
+        int left = maximum(root.left);
+        int right = maximum(root.right);
+        return Math.max(Math.max(left, right), root.data);
     }
 // ITERATIVE WAY USING STACK
 static int ma_x = Integer.MIN_VALUE;
