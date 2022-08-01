@@ -17,7 +17,7 @@
     }
     
     // for array
-    static ArrayList<ArrayList<Integer>> Subsequence(int[] a){
+    static ArrayList<ArrayList<Integer>> subSet(int[] a){
         ArrayList<ArrayList<Integer>> outer = new ArrayList<>();
         outer.add(new ArrayList<>());
         for(int num:a){
