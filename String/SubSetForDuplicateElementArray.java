@@ -1,4 +1,5 @@
  static ArrayList<ArrayList<Integer>> Subsequencedup(int[] a){
+        Arrays.sort(a);
         ArrayList<ArrayList<Integer>> outer = new ArrayList<>();
         outer.add(new ArrayList<>());
         int start = 0;
