@@ -1,4 +1,5 @@
 // https://practice.geeksforgeeks.org/problems/number-of-provinces/1
+// Time Complexity O(v^2)+O(V+E)
 class Solution {
     public static void dfs(int vertice, int V, ArrayList<ArrayList<Integer>> adjLst,int[]visited){
         if(visited[vertice] == 1){
